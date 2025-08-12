@@ -7,7 +7,7 @@ $table = "Persons";
 try {
   $db = new PDO("mysql:host=localhost;dbname=$database", $user, $password);
 
-  echo "<h2>Persons</h2>";
+  echo "<h2>PERSONS</h2>";
   echo "<table>";
   echo " <tr>
           <td>Id</td>
