@@ -21,14 +21,4 @@ jobs:
         run: |
           rsync -avz --delete --exclude='.git/' \
             -e "ssh -o StrictHostKeyChecking=no" \
-            ./ user@server_ip:/path/to/target/folder/
-
-      # Альтернатива: выполнение команд на сервере через SSH
-      - name: Run commands on server
-        run: |
-          ssh -o StrictHostKeyChecking=no user@server_ip "
-            cd /path/to/project &&
-            git pull origin main &&
-            npm install &&
-            pm2 restart app.js
-          "
+            ./ golg0fa@212.115.110.215:/var/www/groses.space/
